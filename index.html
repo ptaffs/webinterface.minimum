@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>minimum web interface</title>
+</head>
+<body>
+<p>minimum, there is very little here</p>
+<span id="pause" onclick="fnPause();"><p>play/pause</p></span>
+
+<script type="text/javascript">
+// assumes audio player (playerid zero).
+const oReq={jsonrpc:"2.0", id:0, method:"Player.PlayPause", params:{playerid: 0} }
+
+function fnPause() {
+  fetch("/jsonrpc", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(oReq)
+  });
+}
+</script>
+</body>
+</html>

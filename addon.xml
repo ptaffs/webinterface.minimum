@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="webinterface.minimum"
+  version="0.1"
+  name="Foundation for Kodi Web Interface"
+  provider-name="ptaffs@gmail.com">
+  <requires>
+    <import addon="xbmc.json" version="6.0.0" />
+  </requires>
+  <extension point="xbmc.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">New web interface</summary>
+    <description lang="en_GB">Just a hello world.</description>
+    <platform>all</platform>
+    <source>https://github.com/ptaffs/kodiminimumwebview</source>
+    <forum>http://forum.xbmc.org/</forum>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
